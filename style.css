@@ -1,7 +1,8 @@
 /* header */
-@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
 /* 本文 */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,23 +10,12 @@ body {
   background-color: whitesmoke;
 
   /* font-family: "Noto Sans JP", sans-serif; */
-  font-family: "Shippori Mincho";
+  font-family: 'Shippori Mincho';
   /* color: #444444; */
   color: rgb(59, 59, 59);
-}
-.body::before {
-  content: "";
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  width: 100%;
-  height: 1200px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  /* background-position:水平方向の位置と垂直方向の位置を指定 */
   background-image: url(./images/haikei.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 .category > div {
   display: none;
@@ -37,7 +27,7 @@ body {
 .category h2 {
   border-left: 0.3em solid #df581e;
   margin-top: 0;
-  font-family: "Shippori Mincho", serif;
+  font-family: 'Shippori Mincho', serif;
   color: #df581e;
 }
 .right p:nth-of-type(3) {
@@ -67,7 +57,7 @@ footer {
 }
 header h1 {
   margin: 0;
-  font-family: "Shippori Mincho", serif;
+  font-family: 'Shippori Mincho', serif;
 }
 main {
   margin: 0 auto;
@@ -87,7 +77,7 @@ header h1 {
 
 .right p:nth-child(1):before,
 .right p:nth-child(3):before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -100,7 +90,7 @@ header h1 {
 .right p:nth-child(1),
 .right p:nth-child(3) {
   font-size: 1.2em;
-  font-family: "Shippori Mincho";
+  font-family: 'Shippori Mincho';
 }
 
 /***トップへ戻るボタンここから***/
